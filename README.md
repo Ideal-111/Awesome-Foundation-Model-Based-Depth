@@ -106,7 +106,6 @@ Includes diffusion/flow-based depth prediction and deterministic adaptations of 
 
 ### 🏷️ Panoramic Depth Estimation
 
-<!-- Depth estimation from a single 360° panorama, including panoramic foundation models, adaptations of pretrained perspective models, and diffusion-based methods. Earlier panoramic baselines are listed separately for context. -->
 - [Bozic2026] Unified Panoramic Geometry Estimation via Multi-View Foundation Models in *NeurIPS*, 2026. [\[paper\]](https://arxiv.org/abs/2605.26368) [\[code\]](https://github.com/prs-eth/PaGeR)
 - [Lin2026] Depth Any Panoramas: A Foundation Model for Panoramic Depth Estimation in *CVPR*, 2026. [\[paper\]](https://arxiv.org/abs/2512.16913) [\[code\]](https://github.com/Insta360-Research-Team/DAP)
 - [Li2026] DA<sup>2</sup>: Depth Anything in Any Direction in *ICLR*, 2026. [\[paper\]](https://arxiv.org/abs/2509.26618) [\[code\]](https://github.com/EnVision-Research/DA-2)
@@ -132,11 +131,11 @@ These methods use additional stereo observations to guide monocular depth priors
 
 ### 🏷️ Architectural Revision & Fine-tuning
 
+- [Hong2026] StarryGazer: Leveraging Monocular Depth Estimation Models for Domain-Agnostic Single Depth Image Completion in *Signal, Image and Video Processing*, 2026. [\[paper\]](https://doi.org/10.1007/s11760-026-05523-y) [\[preprint\]](https://arxiv.org/abs/2512.13147)
 - [Ma2026] MetricAnything: Scaling Metric Depth Pretraining with Noisy Heterogeneous Sources in *ECCV*, 2026. [\[paper\]](https://arxiv.org/abs/2601.22054) [\[code\]](https://github.com/metric-anything/metric-anything)
 - [Lyu2026] DidSee: Diffusion-Based Depth Completion for Material-Agnostic Robotic Perception and Manipulation in *IEEE TCSVT*, 2026. [\[paper\]](https://ieeexplore.ieee.org/document/11688125) [\[preprint\]](https://arxiv.org/abs/2506.21034) [\[project\]](https://wenzhoulyu.github.io/DidSee/index.html)
 - [Yan2026] Zero-Shot Depth Completion with Vision-Language Model in *CVPR*, 2026. [\[paper\]](https://openaccess.thecvf.com/content/CVPR2026/html/Yan_Zero-Shot_Depth_Completion_with_Vision-Language_Model_CVPR_2026_paper.html)
 - [Tan2026] Masked Depth Modeling for Spatial Perception in *ECCV*, 2026. [\[paper\]](https://arxiv.org/abs/2601.17895) [\[code\]](https://github.com/robbyant/lingbot-depth)
-<!-- - [Keetha2026] MapAnything: Universal Feed-Forward Metric 3D Reconstruction in *3DV*, 2026. [\[paper\]](https://arxiv.org/abs/2509.13414) [\[code\]](https://github.com/facebookresearch/map-anything) -->
 - [Gregorek2026] Need for Speed: Zero-Shot Depth Completion with Single-Step Diffusion in *CVPR Workshops (NTIRE)*, 2026. [\[paper\]](https://arxiv.org/abs/2603.10584) [\[code\]](https://github.com/dtu-pas/marigold-ssd)
 - [Zhou2026] Any to Full: Prompting Depth Anything for Depth Completion in One Stage in *ECCV*, 2026. [\[paper\]](https://arxiv.org/abs/2603.05711) [\[code\]](https://github.com/zhiyuandaily/Any2Full)
 - [Cho2026] OASIS-DC: Generalizable Depth Completion via Output-level Alignment of Sparse-Integrated Monocular Pseudo Depth in *ICRA*, 2026. [\[paper\]](https://arxiv.org/abs/2602.01268) [\[code\]](https://github.com/jhcho-53/OASIS-DC)
@@ -201,8 +200,6 @@ These methods are included for comparison and are not categorized as adaptations
 ## 🔍 Related Survey
 
 - [Liu2026] Monocular Depth Estimation from a Single Image: Progress and Opportunities in *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2609.01172)
-<!-- - [Xu2026] Towards depth foundation models: Recent trends in vision-based depth estimation in *Computational Visual Media*, 2026. [\[paper\]](https://doi.org/10.26599/CVM.2025.9450517) [\[preprint\]](https://arxiv.org/abs/2507.11540)
-- [Zhang2025] Survey on Monocular Metric Depth Estimation in *Computers*, 2025. [\[paper\]](https://doi.org/10.3390/computers14110502) -->
 - [Yao2025] Monocular Depth Estimation in the Foundation Model Era: A Survey in *TechRxiv*, 2025. [\[paper\]](https://www.techrxiv.org/users/996121/articles/1356831-monocular-depth-estimation-in-the-foundation-model-era-a-survey)
 - [Rajapaksha2024] Deep Learning-based Depth Estimation Methods from Monocular Image and Videos: A Comprehensive Survey in *ACM Computing Surveys*, 2024. [\[paper\]](https://doi.org/10.1145/3677327)
 - [Xie2024] Recent Advances in Conventional and Deep Learning-Based Depth Completion: A Survey in *IEEE TNNLS*, 2024. [\[paper\]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9875218)
