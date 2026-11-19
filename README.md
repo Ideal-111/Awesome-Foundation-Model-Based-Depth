@@ -22,7 +22,6 @@ Taxonomy
 ├── Test-time Adaptation
   ├──Latent Variable Optimization
   ├──Parameter-Efficient Test-Time Tuning
-└── Explicit Output Calibration
 ```
 
 ## 💪 How to Contribute
@@ -31,7 +30,7 @@ We will continue to update this list with the latest resources. If you find any 
 
 ## ✨ Monocular Depth Estimation
 
-The collection includes depth foundation models, methods that adapt pretrained models, and earlier context papers. Video and stereo-guided methods are listed separately.
+The collection includes depth foundation models, methods that adapt pretrained models, and earlier context papers. Video, panoramic, and stereo-guided methods are listed in dedicated subsections.
 
 <a id="discriminative-model"></a>
 
@@ -42,7 +41,6 @@ The collection includes depth foundation models, methods that adapt pretrained m
 - [Fang2026] Dens3R: A Foundation Model for 3D Geometry Prediction in *ICLR*, 2026. [\[paper\]](https://arxiv.org/abs/2507.16290) [\[code\]](https://github.com/G-1nOnly/Dens3R)
 - [Bochkovskii2025] Depth Pro: Sharp Monocular Metric Depth in Less Than a Second in *ICLR*, 2025. [\[paper\]](https://openreview.net/forum?id=aueXfY0Clv) [\[code\]](https://github.com/apple-aiml-research/ml-depth-pro)
 - [Piccinelli2025] UniK3D: Universal Camera Monocular 3D Estimation in *CVPR*, 2025. [\[paper\]](https://arxiv.org/abs/2503.16591) [\[code\]](https://github.com/lpiccinelli-eth/UniK3D)
-- [Guo2025] Depth Any Camera: Zero-Shot Metric Depth Estimation from Any Camera in *CVPR*, 2025. [\[paper\]](https://arxiv.org/abs/2501.02464) [\[code\]](https://github.com/yuliangguo/depth_any_camera)
 - [Wang2025] Jasmine: Harnessing Diffusion Prior for Self-supervised Depth Estimation in *NeurIPS*, 2025. [\[paper\]](https://arxiv.org/abs/2503.15905) [\[code\]](https://github.com/wangjiyuan9/jasmine)
 - [Wang2025] MoGe-2: Accurate Monocular Geometry with Metric Scale and Sharp Details in *arXiv*, 2025. [\[paper\]](https://arxiv.org/abs/2507.02546) [\[code\]](https://github.com/microsoft/moge)
 - [Wang2025] MoGe: Unlocking Accurate Monocular Geometry Estimation for Open-Domain Images with Optimal Training Supervision in *CVPR*, 2025. [\[paper\]](https://arxiv.org/abs/2410.19115) [\[code\]](https://github.com/microsoft/moge)
@@ -96,30 +94,49 @@ Includes diffusion/flow-based depth prediction and deterministic adaptations of 
 - [Pham2025] SharpDepth: Sharpening Metric Depth Predictions Using Diffusion Distillation in *CVPR*, 2025. [\[paper\]](https://openaccess.thecvf.com/content/CVPR2025/papers/Pham_SharpDepth_Sharpening_Metric_Depth_Predictions_Using_Diffusion_Distillation_CVPR_2025_paper.pdf) [\[code\]](https://github.com/Qualcomm-AI-research/SharpDepth)
 - [Zhang2024] BetterDepth: Plug-and-Play Diffusion Refiner for Zero-Shot Monocular Depth Estimation in *NeurIPS*, 2024. [\[paper\]](https://arxiv.org/abs/2407.17952)
 
-### 🏷️ Video Depth Estimation & Temporal Refinement
+### 🏷️ Video Depth Estimation
 
 - [Chen2025] Video Depth Anything: Consistent Depth Estimation for Super-Long Videos in *CVPR*, 2025. [\[paper\]](https://arxiv.org/abs/2501.12375) [\[code\]](https://github.com/DepthAnything/Video-Depth-Anything)
 - [Ke2025] Video Depth without Video Models in *CVPR*, 2025. [\[paper\]](https://arxiv.org/abs/2411.19189) [\[code\]](https://github.com/prs-eth/RollingDepth)
 - [Yang2025] Depth Any Video with Scalable Synthetic Data in *ICLR*, 2025. [\[paper\]](https://arxiv.org/abs/2410.10815) [\[code\]](https://github.com/Nightmare-n/DepthAnyVideo)
 - [Hu2025] DepthCrafter: Generating Consistent Long Depth Sequences for Open-world Videos in *CVPR*, 2025. [\[paper\]](https://arxiv.org/abs/2409.02095) [\[code\]](https://github.com/Tencent/DepthCrafter)
 - [Shao2025] Learning Temporally Consistent Video Depth from Video Diffusion Priors in *CVPR*, 2025. [\[paper\]](https://arxiv.org/abs/2406.01493) [\[code\]](https://github.com/jiahao-shao1/ChronoDepth)
+- [Xu2024] Toward 3D scene reconstruction from locally scale-aligned monocular video depth in *JUSTC*, 2024. [\[paper\]](https://doi.org/10.52396/JUSTC-2023-0061)
 - [Wang2023] Neural Video Depth Stabilizer in *ICCV*, 2023. [\[paper\]](https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_Neural_Video_Depth_Stabilizer_ICCV_2023_paper.pdf) [\[code\]](https://github.com/RaymondWang987/NVDS)
 
-### 🏷️ Related Stereo-Guided Methods
+### 🏷️ Panoramic Depth Estimation
+
+<!-- Depth estimation from a single 360° panorama, including panoramic foundation models, adaptations of pretrained perspective models, and diffusion-based methods. Earlier panoramic baselines are listed separately for context. -->
+- [Bozic2026] Unified Panoramic Geometry Estimation via Multi-View Foundation Models in *NeurIPS*, 2026. [\[paper\]](https://arxiv.org/abs/2605.26368) [\[code\]](https://github.com/prs-eth/PaGeR)
+- [Lin2026] Depth Any Panoramas: A Foundation Model for Panoramic Depth Estimation in *CVPR*, 2026. [\[paper\]](https://arxiv.org/abs/2512.16913) [\[code\]](https://github.com/Insta360-Research-Team/DAP)
+- [Li2026] DA<sup>2</sup>: Depth Anything in Any Direction in *ICLR*, 2026. [\[paper\]](https://arxiv.org/abs/2509.26618) [\[code\]](https://github.com/EnVision-Research/DA-2)
+- [Guo2025] Depth Any Camera: Zero-Shot Metric Depth Estimation from Any Camera in *CVPR*, 2025. [\[paper\]](https://arxiv.org/abs/2501.02464) [\[code\]](https://github.com/yuliangguo/depth_any_camera)
+- [Cao2025] PanDA: Towards Panoramic Depth Anything with Unlabeled Panoramas and Mobius Spatial Augmentation in *CVPR*, 2025. [\[paper\]](https://openaccess.thecvf.com/content/CVPR2025/papers/Cao_PanDA_Towards_Panoramic_Depth_Anything_with_Unlabeled_Panoramas_and_Mobius_CVPR_2025_paper.pdf) [\[code\]](https://github.com/caozidong/PanDA)
+- [Mohadikar2025] OmniDiffusion: Reformulating 360 Monocular Depth Estimation using Semantic and Surface Normal Conditioned Diffusion in *WACV*, 2025. [\[paper\]](https://openaccess.thecvf.com/content/WACV2025/papers/Mohadikar_OmniDiffusion_Reformulating_360_Monocular_Depth_Estimation_using_Semantic_and_Surface_WACV_2025_paper.pdf)
+- [Rey-Area2022] 360MonoDepth: High-Resolution 360° Monocular Depth Estimation in *CVPR*, 2022. [\[paper\]](https://arxiv.org/abs/2111.15669) [\[code\]](https://github.com/manurare/360monodepth)
+
+<!-- **Earlier panoramic baselines**
+
+- [Shen2022] PanoFormer: Panorama Transformer for Indoor 360° Depth Estimation in *ECCV*, 2022. [\[paper\]](https://arxiv.org/abs/2203.09283) [\[code\]](https://github.com/zhijieshen-bjtu/PanoFormer)
+- [Li2022] OmniFusion: 360 Monocular Depth Estimation via Geometry-Aware Fusion in *CVPR*, 2022. [\[paper\]](https://arxiv.org/abs/2203.00838) [\[code\]](https://github.com/yuliangguo/OmniFusion)
+- [Jiang2021] UniFuse: Unidirectional Fusion for 360° Panorama Depth Estimation in *IEEE RA-L*, 2021. [\[paper\]](https://arxiv.org/abs/2102.03550) [\[code\]](https://github.com/alibaba/UniFuse-Unidirectional-Fusion)
+- [Wang2020] BiFuse: Monocular 360 Depth Estimation via Bi-Projection Fusion in *CVPR*, 2020. [\[paper\]](https://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_BiFuse_Monocular_360_Depth_Estimation_via_Bi-Projection_Fusion_CVPR_2020_paper.pdf) [\[code\]](https://github.com/yuhsuanyeh/BiFuse) -->
+
+<!-- ### 🏷️ Related Stereo-Guided Methods
 
 These methods use additional stereo observations to guide monocular depth priors.
 
-- [Pham2025] GeoDiff: Geometry-Guided Diffusion for Metric Depth Estimation in *ICCV Findings*, 2025. [\[paper\]](https://arxiv.org/pdf/2510.18291)
+- [Pham2025] GeoDiff: Geometry-Guided Diffusion for Metric Depth Estimation in *ICCV Findings*, 2025. [\[paper\]](https://arxiv.org/pdf/2510.18291) -->
 
 ## ✨ Depth Completion (Foundation Model-based Method)
 
 ### 🏷️ Architectural Revision & Fine-tuning
 
+- [Ma2026] MetricAnything: Scaling Metric Depth Pretraining with Noisy Heterogeneous Sources in *ECCV*, 2026. [\[paper\]](https://arxiv.org/abs/2601.22054) [\[code\]](https://github.com/metric-anything/metric-anything)
 - [Lyu2026] DidSee: Diffusion-Based Depth Completion for Material-Agnostic Robotic Perception and Manipulation in *IEEE TCSVT*, 2026. [\[paper\]](https://ieeexplore.ieee.org/document/11688125) [\[preprint\]](https://arxiv.org/abs/2506.21034) [\[project\]](https://wenzhoulyu.github.io/DidSee/index.html)
 - [Yan2026] Zero-Shot Depth Completion with Vision-Language Model in *CVPR*, 2026. [\[paper\]](https://openaccess.thecvf.com/content/CVPR2026/html/Yan_Zero-Shot_Depth_Completion_with_Vision-Language_Model_CVPR_2026_paper.html)
 - [Tan2026] Masked Depth Modeling for Spatial Perception in *ECCV*, 2026. [\[paper\]](https://arxiv.org/abs/2601.17895) [\[code\]](https://github.com/robbyant/lingbot-depth)
-- [Kim2026] Dense Metric Depth Completion from Sparse Direct Time-of-Flight Sensors in *CVPR*, 2026. [\[paper\]](https://arxiv.org/abs/2608.04737) [\[code\]](https://github.com/KAIST-VCLAB/dToF-DMDC)
-- [Keetha2026] MapAnything: Universal Feed-Forward Metric 3D Reconstruction in *3DV*, 2026. [\[paper\]](https://arxiv.org/abs/2509.13414) [\[code\]](https://github.com/facebookresearch/map-anything)
+<!-- - [Keetha2026] MapAnything: Universal Feed-Forward Metric 3D Reconstruction in *3DV*, 2026. [\[paper\]](https://arxiv.org/abs/2509.13414) [\[code\]](https://github.com/facebookresearch/map-anything) -->
 - [Gregorek2026] Need for Speed: Zero-Shot Depth Completion with Single-Step Diffusion in *CVPR Workshops (NTIRE)*, 2026. [\[paper\]](https://arxiv.org/abs/2603.10584) [\[code\]](https://github.com/dtu-pas/marigold-ssd)
 - [Zhou2026] Any to Full: Prompting Depth Anything for Depth Completion in One Stage in *ECCV*, 2026. [\[paper\]](https://arxiv.org/abs/2603.05711) [\[code\]](https://github.com/zhiyuandaily/Any2Full)
 - [Cho2026] OASIS-DC: Generalizable Depth Completion via Output-level Alignment of Sparse-Integrated Monocular Pseudo Depth in *ICRA*, 2026. [\[paper\]](https://arxiv.org/abs/2602.01268) [\[code\]](https://github.com/jhcho-53/OASIS-DC)
@@ -144,26 +161,24 @@ MetricAnything (Ma et al., ECCV 2026), listed under [Discriminative Model](#disc
 
 ### 🏷️ Test-time Adaptation
 
-- [Ke2026] Depth Completion as Parameter-Efficient Test-Time Adaptation in *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2602.14751) [\[code\]](https://github.com/nv-dvl/capa)
-- [Seo2026] StreamTTO: Efficient Online Test-Time Optimization for Video Depth Completion in *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2603.01765) [\[code\]](https://github.com/Wonjun-Lee1009/Efficient-TTO-Depth-Completion)
-- [Jeong2025] Test-Time Prompt Tuning for Zero-Shot Depth Completion in *ICCV*, 2025. [\[paper\]](https://openaccess.thecvf.com/content/ICCV2025/papers/Jeong_Test-Time_Prompt_Tuning_for_Zero-Shot_Depth_Completion_ICCV_2025_paper.pdf) [\[code\]](https://github.com/JinhwiPark/TestPromptDC)
-- [Viola2025] Marigold-DC: Zero-Shot Monocular Depth Completion with Guided Diffusion in *ICCV*, 2025. [\[paper\]](https://arxiv.org/abs/2412.13389) [\[code\]](https://github.com/prs-eth/Marigold-DC)
-- [Lee2025] Zero-shot Depth Completion via Test-time Alignment with Affine-invariant Depth Prior in *AAAI*, 2025. [\[paper\]](https://arxiv.org/abs/2502.06338) [\[code\]](https://github.com/kaist-ami/Zero-Shot-Depth-Completion)
-- [Gregorek2025] SteeredMarigold: Steering Diffusion Towards Depth Completion of Largely Incomplete Depth Maps in *ICRA*, 2025. [\[paper\]](https://arxiv.org/abs/2409.10202) [\[code\]](https://github.com/DTU-PAS/steered-marigold)
-
-### 🏷️ Explicit Output Calibration
-
 - [Zhang2026] The Midas Touch for Metric Depth: Interpretable Metricization for Generalizable Depth Perception in *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2610.16749)
 - [Ma2026] The Midas Touch for Metric Depth in *CVPR*, 2026. [\[paper\]](https://openaccess.thecvf.com/content/CVPR2026/html/Ma_The_Midas_Touch_for_Metric_Depth_CVPR_2026_paper.html) [\[code\]](https://github.com/HenryMaxixi/MTD)
 - [Dorer2026] AnchorD: Metric Grounding of Monocular Depth Using Factor Graphs in *IROS*, 2026. [\[paper\]](https://arxiv.org/abs/2605.02667)
 - [Halperin2026] FounRef: Robust, Structure-Preserving, and Fast Metric Refinement of Frozen Monocular Foundation Priors with Sparse Anchors in *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2609.29224)
 - [Zhang2026] Boosting Metric Depth Completion via Training-Free Adaptive Response Geometry in *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2609.36168)
-- [Xu2024] Toward 3D scene reconstruction from locally scale-aligned monocular video depth in *JUSTC*, 2024. [\[paper\]](https://doi.org/10.52396/JUSTC-2023-0061)
+- [Vodianyk2026] HIFI-DC: High-fidelity detail-preserving depth completion in *Image and Vision Computing*, 2026. [\[paper\]](https://doi.org/10.1016/j.imavis.2026.106024) [\[code\]](https://github.com/bohdanvodianyk/hifi-dc)
+- [Ke2026] Depth Completion as Parameter-Efficient Test-Time Adaptation in *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2602.14751) [\[code\]](https://github.com/nv-dvl/capa)
+- [Seo2026] StreamTTO: Efficient Online Test-Time Optimization for Video Depth Completion in *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2603.01765v5) [\[code\]](https://github.com/Wonjun-Lee1009/Efficient-TTO-Depth-Completion)
+- [Seo2026] Efficient Test-Time Optimization for Depth Completion via Low-Rank Decoder Adaptation in *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2603.01765v1) [\[code\]](https://github.com/Wonjun-Lee1009/Efficient-TTO-Depth-Completion)
+- [Jeong2025] Test-Time Prompt Tuning for Zero-Shot Depth Completion in *ICCV*, 2025. [\[paper\]](https://openaccess.thecvf.com/content/ICCV2025/papers/Jeong_Test-Time_Prompt_Tuning_for_Zero-Shot_Depth_Completion_ICCV_2025_paper.pdf) [\[code\]](https://github.com/JinhwiPark/TestPromptDC)
+- [Viola2025] Marigold-DC: Zero-Shot Monocular Depth Completion with Guided Diffusion in *ICCV*, 2025. [\[paper\]](https://arxiv.org/abs/2412.13389) [\[code\]](https://github.com/prs-eth/Marigold-DC)
+- [Lee2025] Zero-shot Depth Completion via Test-time Alignment with Affine-invariant Depth Prior in *AAAI*, 2025. [\[paper\]](https://arxiv.org/abs/2502.06338) [\[code\]](https://github.com/kaist-ami/Zero-Shot-Depth-Completion)
+- [Gregorek2025] SteeredMarigold: Steering Diffusion Towards Depth Completion of Largely Incomplete Depth Maps in *ICRA*, 2025. [\[paper\]](https://arxiv.org/abs/2409.10202) [\[code\]](https://github.com/DTU-PAS/steered-marigold)
 
 ## ✨ Related Generalizable Depth Completion Baselines
 
 These methods are included for comparison and are not categorized as adaptations of depth foundation models.
-
+- [Kim2026] Dense Metric Depth Completion from Sparse Direct Time-of-Flight Sensors in *CVPR*, 2026. [\[paper\]](https://arxiv.org/abs/2608.04737) [\[code\]](https://github.com/KAIST-VCLAB/dToF-DMDC)
 - [Zuo2025] OMNI-DC: Highly Robust Depth Completion with Multiresolution Depth Integration in *ICCV*, 2025. [\[paper\]](https://arxiv.org/abs/2411.19278) [\[code\]](https://github.com/princeton-vl/OMNI-DC)
 - [Wang2025] Scale Propagation Network for Generalizable Depth Completion in *IEEE TPAMI*, 2025. [\[paper\]](https://doi.org/10.1109/TPAMI.2024.3513440) [\[code\]](https://github.com/Wang-xjtu/SPNet)
 
@@ -185,8 +200,11 @@ These methods are included for comparison and are not categorized as adaptations
 
 ## 🔍 Related Survey
 
+- [Liu2026] Monocular Depth Estimation from a Single Image: Progress and Opportunities in *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2609.01172)
+<!-- - [Xu2026] Towards depth foundation models: Recent trends in vision-based depth estimation in *Computational Visual Media*, 2026. [\[paper\]](https://doi.org/10.26599/CVM.2025.9450517) [\[preprint\]](https://arxiv.org/abs/2507.11540)
+- [Zhang2025] Survey on Monocular Metric Depth Estimation in *Computers*, 2025. [\[paper\]](https://doi.org/10.3390/computers14110502) -->
 - [Yao2025] Monocular Depth Estimation in the Foundation Model Era: A Survey in *TechRxiv*, 2025. [\[paper\]](https://www.techrxiv.org/users/996121/articles/1356831-monocular-depth-estimation-in-the-foundation-model-era-a-survey)
-- [Xu2025] Towards Depth Foundation Model: Recent Trends in Vision-Based Depth Estimation in *arXiv*, 2025. [\[paper\]](https://arxiv.org/abs/2507.11540)
+- [Rajapaksha2024] Deep Learning-based Depth Estimation Methods from Monocular Image and Videos: A Comprehensive Survey in *ACM Computing Surveys*, 2024. [\[paper\]](https://doi.org/10.1145/3677327)
 - [Xie2024] Recent Advances in Conventional and Deep Learning-Based Depth Completion: A Survey in *IEEE TNNLS*, 2024. [\[paper\]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9875218)
 - [Arampatzakis2023] Monocular Depth Estimation: A Thorough Review in *IEEE TPAMI*, 2023. [\[paper\]](https://ieeexplore.ieee.org/document/10313067)
 - [Hu2022] Deep Depth Completion From Extremely Sparse Data: A Survey in *IEEE TPAMI*, 2022. [\[paper\]](https://ieeexplore.ieee.org/document/9984942)
